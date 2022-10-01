@@ -1,4 +1,4 @@
-
+import sys, time
 
 my_hero = {
     "name" : 'Pogi',
@@ -6,8 +6,7 @@ my_hero = {
     "health" : 100,
     "equipment" : {'Invisible infinity pouch', 'Collar of the Gods', "Protector's Orb",},
     "attacks" : (("sonic bark", 55), ("death stare", 30), 
-                ("pogi push", 25) ("love scratch", 50), ("pogi charge", 45),
-                 ('defend', 10)),
+                ("pogi push", 25), ("love scratch", 50), ("pogi charge", 45), ('defend', 10)),
     "coins" : {
         "copper" : 50,
         "silver" : 0,
@@ -55,7 +54,20 @@ enemy_three = {
     }
 }
 
+def slow_print(string_to_print):
+    for letter in string_to_print:
+        sys.stdout.write(letter)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    print(" ")
 
+
+
+def Pogi_Tales_RPG():
+    print("-------------------")
+    slow_print("Pogi wakes up and the room is dark...")
+
+Pogi_Tales_RPG()
 
 
 

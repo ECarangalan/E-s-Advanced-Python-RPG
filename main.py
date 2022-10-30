@@ -61,11 +61,22 @@ def slow_print(string_to_print):
         time.sleep(0.05)
     print(" ")
 
+def fast_print(string_to_print):
+    for letter in string_to_print:
+        sys.stdout.write(letter)
+        sys.stdout.flush()
+        time.sleep(0.01)
+    print(" ")
+
+
 
 
 def Pogi_Tales_RPG():
     print("-------------------")
     slow_print("Pogi wakes up and the room is dark...")
+    slow_print("...                                         ")
+    print("*Thunder and lightning strike* ")
+    slow_print("Pogi panics and realizes his dad is missing...")
 
 Pogi_Tales_RPG()
 
